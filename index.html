@@ -392,7 +392,7 @@
         <ul class="exp-bullets">
           <li>Shipped scalable, production-ready React and TypeScript components styled with Tailwind CSS across a logistics SaaS dashboard's marketing site, onboarding flow, and redesigned interface, contributing to a 12% improvement in client retention</li>
           <li>Built and consumed RESTful APIs in Node.js and Python to integrate frontend with PostgreSQL and MySQL-backed services, implementing state management, data fetching, and error handling for real-time features</li>
-          <li>Owned features end-to-end through design and code reviews on a bi-weekly release cycle, deploying across multiple client codebases via Git-based CI/CD pipelines on AWS</li>
+          <li>Deployed across multiple client codebases via Git-based CI/CD pipelines on AWS, adapting quickly to new tech stacks in a fast-paced agency environment</li>
         </ul>
         <div class="exp-tags">
           <span class="exp-tag">React</span>
@@ -439,9 +439,7 @@
       <div>
         <div class="exp-title">Undergraduate Research Assistant</div>
         <ul class="exp-bullets">
-          <li>Contributed to early development of iGPT (now ZotGPT, UCI's AI platform), building a custom chatbot for UCI students with a professor and UCI's OIT team</li>
-          <li>Fine-tuned language models on UCI-specific data to improve chatbot response accuracy, applying transfer learning across training and evaluation pipelines</li>
-          <li>Built data preprocessing pipelines for cleaning training data, and contributed to supporting platform infrastructure</li>
+          <li>Accelerated iGPT's (now ZotGPT at zotgpt.uci.edu) development by building Python data preprocessing pipelines and fine-tuning LLMs on UCI-specific datasets alongside a professor and UCI's Office of Information Technology</li>
         </ul>
         <div class="exp-tags">
           <span class="exp-tag">Machine Learning</span>
@@ -466,7 +464,7 @@
       <div class="proj-number">01 / Collaborative Code Editor</div>
       <div class="proj-title"><a href="https://collaborative-code-editor-livid.vercel.app" target="_blank" style="color:inherit;text-decoration:none;">CollabCode</a></div>
       <p class="proj-desc">
-        Real-time collaborative code editor (think Google Docs for code) using Monaco and WebSockets — multiple users write and run code together with live cursors, selections, and Figma-style follow mode. Backend keeps room data safe across server restarts by combining Redis for fast access with PostgreSQL as the source of truth, hydrating the cache on startup. Includes a Claude AI assistant streamed across four modes (explain, fix, improve, generate) plus in-browser JavaScript and sandboxed Python execution.
+        Real-time collaborative code editor (Monaco + Flask-SocketIO) with live cursors, Figma-style follow mode, room chat, password-protected rooms, and a multi-file workspace. Designed a three-layer persistence system (Redis cache, PostgreSQL source of truth, SQLite snapshots) and integrated Claude across four context-aware modes with sandboxed code execution.
       </p>
       <div class="proj-stack">
         <span>React</span><span>TypeScript</span><span>Monaco</span><span>Flask-SocketIO</span><span>Redis</span><span>PostgreSQL</span><span>Claude API</span>
@@ -481,7 +479,7 @@
       <div class="proj-number">02 / Algorithm Visualizer</div>
       <div class="proj-title"><a href="https://sean-kim05.github.io/DSAVisualizer/" target="_blank" style="color:inherit;text-decoration:none;">DSAVisualizer</a></div>
       <p class="proj-desc">
-        Interactive visualizer for 8 algorithm and data structure categories including pathfinding (Dijkstra, A*, BFS, DFS, Greedy Best-First with maze generation), sorting, BSTs, heaps, graphs, and linked lists. Built a Claude AI tutor that knows which algorithm the user is watching and what state it's in, so explanations are tailored to exactly what's happening on screen — streamed live token-by-token via a Flask backend with the Anthropic Python SDK.
+        Interactive visualizer with 12 algorithm implementations across 8 categories — pathfinding (Dijkstra, A*, BFS, DFS, Greedy Best-First), sorting, BSTs, heaps, and graphs. Integrated a Claude AI tutor with server-side prompt construction: the React frontend sends viz state while Flask injects context and streams responses via SSE.
       </p>
       <div class="proj-stack">
         <span>React</span><span>Vite</span><span>Flask</span><span>Anthropic SDK</span><span>Python</span><span>CI/CD</span>
@@ -496,7 +494,7 @@
       <div class="proj-number">03 / Cloudflare AI App</div>
       <div class="proj-title">Briefly</div>
       <p class="proj-desc">
-        AI standup generator on Cloudflare's serverless platform that converts messy engineer notes into clean Yesterday/Today/Blockers standups using Llama 3.3, with responses streaming live as they generate. Stores per-user history via Durable Objects with editing, deleting, multi-user team rooms, and one-click weekly summaries pulled from the last 7 standups. Multiple output formats (standard, bulleted, Jira-style) deployed end-to-end on Cloudflare's edge across 330+ cities.
+        AI standup tool on Cloudflare Workers using Llama 3.3 with custom Server-Sent Events streaming via a TransformStream that captures full responses while forwarding tokens in real time. Implemented a Durable Object backend with full CRUD support across personal and team-room namespaces, plus an endpoint generating weekly summaries via a second LLM call.
       </p>
       <div class="proj-stack">
         <span>Cloudflare Workers</span><span>Durable Objects</span><span>Workers AI</span><span>Llama 3.3</span><span>JavaScript</span>
@@ -548,7 +546,6 @@
         <div class="skill-item">React</div>
         <div class="skill-item">Node.js</div>
         <div class="skill-item">Flask</div>
-        <div class="skill-item">Flask-SocketIO</div>
         <div class="skill-item">Tailwind CSS</div>
         <div class="skill-item">PyTorch</div>
         <div class="skill-item">TensorFlow</div>
@@ -559,7 +556,7 @@
     <div class="skill-cat reveal">
       <div class="skill-cat-label">Tools &amp; Cloud</div>
       <div class="skill-list">
-        <div class="skill-item">Git / GitHub</div>
+        <div class="skill-item">Git</div>
         <div class="skill-item">AWS</div>
         <div class="skill-item">Cloudflare Workers</div>
         <div class="skill-item">Docker</div>
@@ -568,7 +565,7 @@
         <div class="skill-item">Redis</div>
         <div class="skill-item">Vite</div>
         <div class="skill-item">CI/CD</div>
-        <div class="skill-item">REST APIs</div>
+        <div class="skill-item">REST</div>
       </div>
     </div>
     <div class="skill-cat reveal">
